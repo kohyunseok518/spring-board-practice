@@ -51,6 +51,12 @@ dependencies {
     // Spring JDBC 추가 (스프링이 DB를 다루기 위한 필수 도구)
     implementation group: 'org.springframework', name: 'spring-jdbc', version: '5.3.16'
 
+    // DTO와 VO 간의 자동 데이터 매핑을 위한 ModelMapper
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '3.0.0'
+
+    // @Valid 어노테이션을 이용한 서버사이드 데이터 검증 라이브러리
+    implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.2.5.Final'
+
     implementation group: 'org.springframework', name: 'spring-tx',
             version: '5.3.16'
     implementation 'org.mybatis:mybatis:3.5.9'
