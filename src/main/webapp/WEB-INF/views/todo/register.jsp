@@ -73,14 +73,18 @@
 
                         <script>
 
+                            // JS용 빈 객체 세팅
                             const serverValidResult = {}
 
+                            // error들이 들어오면 개수만큼 반복
                             <c:forEach items="${errors}" var="error">
 
+                            // 에러 항목 이름 = "에러 메시지" 형태로 담기
                             serverValidResult['${error.getField()}'] = '${error.defaultMessage}'
 
                             </c:forEach>
 
+                            // 콘솔로 출력
                             console.log(serverValidResult)
 
                         </script>
